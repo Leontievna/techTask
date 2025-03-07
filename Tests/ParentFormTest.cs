@@ -1,7 +1,10 @@
+using Allure.NUnit;
+using Allure.NUnit.Attributes;
 using NUnit.Framework.Internal;
 
 namespace techTask;
 
+[AllureNUnit]
 [TestFixture]
 public class ParentFormTest : BaseTest
 {
@@ -14,6 +17,7 @@ public class ParentFormTest : BaseTest
 
 
     [Test]
+    [AllureEpic("Parent Form Feature")]
     public void FillInParentFormViaMiacadamyAndMiaprepLinks()
     {
         //create opject for the first page page
@@ -22,7 +26,8 @@ public class ParentFormTest : BaseTest
         //random german phone number of parent
         int randomNumber = randomizer.Next(10000000, 100000000);
         string randomDigits = randomNumber.ToString();
-
+        
+        
         homePage
         //open https://miacademy.co/#/ and navigate to MiaPrepOnlineHighSchool through the link on banner |
         .OpenHomePage()

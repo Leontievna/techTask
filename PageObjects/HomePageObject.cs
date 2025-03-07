@@ -10,7 +10,6 @@ public class HomePageObject(ChromeDriver driver) : BasePage(driver)
     string mainUrl = "https://miacademy.co/#/";
     private By LinkMiaPrepHighSchool = By.XPath("//*[@class=\"mia-announcementText\"]//a");
 
-
     public OnlineHighSchoolPageObject OpenHomePage()
     {
         driver.Navigate().GoToUrl(mainUrl);
