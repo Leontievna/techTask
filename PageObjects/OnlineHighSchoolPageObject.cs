@@ -8,8 +8,7 @@ namespace techTask;
 public class OnlineHighSchoolPageObject(ChromeDriver driver) : BasePage(driver)
 {
     string miaprepUrl = "https://miaprep.com/online-school/";
-    By ApplyToMohoButton = By.XPath("//*[@class=\"wp-block-button\"]//a");
-
+    By ApplyToMohoButton = By.XPath("//a[contains(@class, 'wp-block-button__link') and (text())='Apply to Our School']");
 
     public PerentDataPageObject ApplyToMOHS()
     {
