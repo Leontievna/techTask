@@ -1,6 +1,6 @@
 using NUnit.Framework.Internal;
 
-namespace miacademy;
+namespace techTask;
 
 [TestFixture]
 public class ParentFormTest : BaseTest

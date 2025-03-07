@@ -4,7 +4,7 @@ Represents the home page, includes methods to open the page and navigate to othe
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace miacademy;
+namespace techTask;
 public class HomePageObject(ChromeDriver driver) : BasePage(driver)
 {
     string mainUrl = "https://miacademy.co/#/";

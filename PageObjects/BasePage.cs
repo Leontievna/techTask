@@ -4,7 +4,7 @@ Base class initializes the WebDriver and handles element waiting.
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Chrome;
 
-namespace miacademy;
+namespace techTask;
 public class BasePage
 {
     protected ChromeDriver driver;

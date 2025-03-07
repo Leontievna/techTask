@@ -7,7 +7,7 @@ using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Internal;
 using SeleniumExtras.WaitHelpers;
 
-namespace miacademy;
+namespace techTask;
 public class PerentDataPageObject(ChromeDriver driver) : BasePage(driver)
 {
     public By nameFirstInput = By.XPath("//input[@complink=\"Name_First\"]");
