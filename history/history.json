@@ -1,1 +1,1 @@
-{"miacademy.ParentFormTest.FillInParentFormViaMiacadamyAndMiaprepLinks":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"d45fcac47156e2d5","status":"passed","time":{"start":1720417816898,"stop":1720417826025,"duration":9127}}]}}
+{"techTask.ParentFormTest.FillInParentFormViaMiacadamyAndMiaprepLinks":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"33e75463ffe6fa9f","status":"passed","time":{"start":1741379807750,"stop":1741379817858,"duration":10108}}]}}

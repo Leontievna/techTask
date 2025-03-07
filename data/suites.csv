@@ -1,2 +1,2 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Jul 08 05:50:16 UTC 2024","Mon Jul 08 05:50:26 UTC 2024","9127","","miacademy.ParentFormTest","","miacademy.ParentFormTest","","FillInParentFormViaMiacadamyAndMiaprepLinks",""
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","10108","FillInParentFormViaMiacadamyAndMiaprepLinks","","Fri Mar 07 20:36:47 UTC 2025","passed","Fri Mar 07 20:36:57 UTC 2025","","techTask.ParentFormTest","techTask.ParentFormTest",""
