@@ -10,7 +10,7 @@ public class ParentFormTest : BaseTest
     string secondName = "Surname";
     string number = "151";
     string email = "test@test.com";
-    string dateStudyStart = "01-Aug-2024";
+    string dateStudyStart = "01-Aug-2025";
 
 
     [Test]

@@ -17,7 +17,7 @@ public class PerentDataPageObject(ChromeDriver driver) : BasePage(driver)
     public By germanyNumber = By.XPath("//*[text()=\"Germany (Deutschland)\"]");
     public By inputFieldNumber = By.CssSelector("input#PhoneNumber");
     public By addAnotherParentDropdown = By.Id("select2-Dropdown-arialabel-container");
-    public By noOptionInDropDown = By.XPath("//*[@role=\"treeitem\"][text()='No']");
+    public By noOptionInDropDown = By.XPath("//li[contains(@id, \"-No\")]");
     public By inputFieldStartDate = By.CssSelector("input#Date-date");
     public By nextPageButton = By.CssSelector("[page_link_name=\"Page\"] button");
     public By backPageButton = By.CssSelector("[page_no=\"2\"] button[elname=\"back\"]");
