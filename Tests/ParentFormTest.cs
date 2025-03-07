@@ -17,7 +17,7 @@ public class ParentFormTest : BaseTest
 
 
     [Test]
-    [AllureEpic("Parent Form Feature")]
+    [AllureStep("Parent Form Feature")]
     public void FillInParentFormViaMiacadamyAndMiaprepLinks()
     {
         //create opject for the first page page
@@ -29,7 +29,7 @@ public class ParentFormTest : BaseTest
         
         
         homePage
-        //open https://miacademy.co/#/ and navigate to MiaPrepOnlineHighSchool through the link on banner |
+        //open https://miacademy.co/#/ and navigate to MiaPrepOnlineHighSchool through the link on banner 
         .OpenHomePage()
         //apply to MOHS
         .ApplyToMOHS()
