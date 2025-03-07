@@ -10,7 +10,9 @@ namespace techTask;
 
 public class PerentDataPageObject(ChromeDriver driver) : BasePage(driver)
 {
+    public By skipFirstInfo = By.CssSelector("div.inlineBlock.nextAlign  button");
     public By nameFirstInput = By.XPath("//input[@complink=\"Name_First\"]");
+
     public By nameSecondInput = By.XPath("//input[@complink=\"Name_Last\"]");
     public By emailInput = By.XPath("//input[@id=\"Email-arialabel\"]");
     public By countryCodeList = By.ClassName("selected-flag");
@@ -27,6 +29,7 @@ public class PerentDataPageObject(ChromeDriver driver) : BasePage(driver)
     public ChildDataPageObject FillInForms(string firstName, string secondName, string number, string email, string dateStudyStart)
     {
         Assert.That(driver.Url, Does.Contain(partialUrlApplicationForm), $"URL has to contain '{partialUrlApplicationForm}'");
+        driver.FindElements(skipFirstInfo).First().Click();
         driver.FindElement(nameFirstInput).SendKeys(firstName);
         driver.FindElement(nameSecondInput).SendKeys(secondName);
         driver.FindElement(countryCodeList).Click();
