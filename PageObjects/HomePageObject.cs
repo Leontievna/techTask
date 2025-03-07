@@ -7,7 +7,7 @@ using OpenQA.Selenium.Chrome;
 namespace techTask;
 public class HomePageObject(ChromeDriver driver) : BasePage(driver)
 {
-    string mainUrl = "https://techTask.co/#/";
+    string mainUrl = "https://miacademy.co/#/";
     private By LinkMiaPrepHighSchool = By.XPath("//*[@class=\"mia-announcementText\"]//a");
 
     public OnlineHighSchoolPageObject OpenHomePage()
