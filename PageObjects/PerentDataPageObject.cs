@@ -10,7 +10,7 @@ namespace techTask;
 
 public class PerentDataPageObject(ChromeDriver driver) : BasePage(driver)
 {
-    public By skipFirstInfo = By.CssSelector("div.inlineBlock.nextAlign  button");
+    public By nextButton = By.CssSelector("div.inlineBlock.nextAlign  button");
     public By nameFirstInput = By.XPath("//input[@complink=\"Name_First\"]");
 
     public By nameSecondInput = By.XPath("//input[@complink=\"Name_Last\"]");
@@ -21,7 +21,6 @@ public class PerentDataPageObject(ChromeDriver driver) : BasePage(driver)
     public By addAnotherParentDropdown = By.Id("select2-Dropdown-arialabel-container");
     public By noOptionInDropDown = By.XPath("//li[contains(@id, \"-No\")]");
     public By inputFieldStartDate = By.CssSelector("input#Date-date");
-    public By nextPageButton = By.CssSelector("[page_link_name=\"Page\"] button");
     public By backPageButton = By.CssSelector("[page_no=\"2\"] button[elname=\"back\"]");
     string partialUrlApplicationForm = "miaplazahelp/form/MOHSInitialApplication";
 
@@ -29,7 +28,8 @@ public class PerentDataPageObject(ChromeDriver driver) : BasePage(driver)
     public ChildDataPageObject FillInForms(string firstName, string secondName, string number, string email, string dateStudyStart)
     {
         Assert.That(driver.Url, Does.Contain(partialUrlApplicationForm), $"URL has to contain '{partialUrlApplicationForm}'");
-        driver.FindElements(skipFirstInfo).First().Click();
+        var buttons = driver.FindElements(nextButton);
+        buttons[0].Click();
         driver.FindElement(nameFirstInput).SendKeys(firstName);
         driver.FindElement(nameSecondInput).SendKeys(secondName);
         driver.FindElement(countryCodeList).Click();
@@ -44,7 +44,7 @@ public class PerentDataPageObject(ChromeDriver driver) : BasePage(driver)
         IWebElement ddHiddenOption = driver.FindElement(noOptionInDropDown);
         actions.MoveToElement(ddHiddenOption).Click().Perform();
         //proceed to Student Information page
-        driver.FindElement(nextPageButton).Click();
+        buttons[1].Click();
         return new ChildDataPageObject(driver);
     }
 } 
