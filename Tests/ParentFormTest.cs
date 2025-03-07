@@ -2,7 +2,7 @@ using Allure.NUnit;
 using Allure.NUnit.Attributes;
 using NUnit.Framework.Internal;
 
-namespace miacademy;
+namespace techTask;
 
 [AllureNUnit]
 [TestFixture]
@@ -29,7 +29,7 @@ public class ParentFormTest : BaseTest
         
         
         homePage
-        //open https://miacademy.co/#/ and navigate to MiaPrepOnlineHighSchool through the link on banner |
+        //open https://techTask.co/#/ and navigate to MiaPrepOnlineHighSchool through the link on banner |
         .OpenHomePage()
         //apply to MOHS
         .ApplyToMOHS()

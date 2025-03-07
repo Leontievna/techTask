@@ -6,7 +6,7 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
 using SeleniumExtras.WaitHelpers;
 
-namespace miacademy;
+namespace techTask;
 
 public class PerentDataPageObject(ChromeDriver driver) : BasePage(driver)
 {

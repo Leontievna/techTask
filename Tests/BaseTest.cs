@@ -1,7 +1,7 @@
 using NUnit.Framework.Internal;
 using OpenQA.Selenium.Chrome;
 
-namespace miacademy;
+namespace techTask;
 
 [TestFixture]
 public class BaseTest

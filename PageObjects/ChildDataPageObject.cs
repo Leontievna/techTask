@@ -4,7 +4,7 @@ Represents the page with student data form and checks of expected page.
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace miacademy;
+namespace techTask;
 public class ChildDataPageObject(ChromeDriver driver) : BasePage(driver)
 { 
     public By backPageButton = By.CssSelector("[page_no=\"2\"] button[elname=\"back\"]");

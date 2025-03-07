@@ -2,11 +2,11 @@
 
 This project contains automated tests using Selenium and NUnit for testing the website.
 
-The main test class is [here](https://github.com/Leontievna/miacademy/blob/main/Tests/ParentFormTest.cs)
+The main test class is [here](https://github.com/Leontievna/techTask/blob/main/Tests/ParentFormTest.cs)
 
 **Allure report**
 
-For checking the report after last push or pull_request to the allure-report branch open [link](https://leontievna.github.io/miacademy/)
+For checking the report after last push or pull_request to the allure-report branch open [link](https://leontievna.github.io/techTask/)
 
 For generating the Allure report locally, follow the instructions below after cloning the project to your local machine:
 

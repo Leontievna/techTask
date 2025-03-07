@@ -4,7 +4,7 @@ Represents the MiaPrep Online High School page, includes a check if the page is 
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace miacademy;
+namespace techTask;
 public class OnlineHighSchoolPageObject(ChromeDriver driver) : BasePage(driver)
 {
     string miaprepUrl = "https://miaprep.com/online-school/";
