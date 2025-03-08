@@ -9,7 +9,6 @@ using Allure.NUnit.Attributes;
 
 namespace techTask;
 
-[TestFixture]
 public class PerentDataPageObject(ChromeDriver driver) : BasePage(driver)
 {
     public By nextButton = By.CssSelector("div.inlineBlock.nextAlign  button");

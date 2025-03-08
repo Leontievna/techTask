@@ -1,5 +1,4 @@
 using Allure.NUnit;
-using Allure.NUnit.Attributes;
 using NUnit.Framework.Internal;
 
 namespace techTask;
@@ -17,9 +16,9 @@ public class ParentFormTest : BaseTest
 
 
     [Test]
-    [AllureStep("Parent Form Feature")]
     public void FillInParentFormViaMiacadamyAndMiaprepLinks()
     {
+  
         //create opject for the first page page
         HomePageObject homePage = new HomePageObject(driver);
 
@@ -27,9 +26,8 @@ public class ParentFormTest : BaseTest
         int randomNumber = randomizer.Next(10000000, 100000000);
         string randomDigits = randomNumber.ToString();
         
-        
-        homePage
         //open https://miacademy.co/#/ and navigate to MiaPrepOnlineHighSchool through the link on banner 
+        homePage
         .OpenHomePage()
         //apply to MOHS
         .ApplyToMOHS()
