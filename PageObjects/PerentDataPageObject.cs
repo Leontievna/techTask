@@ -9,6 +9,7 @@ using Allure.NUnit.Attributes;
 
 namespace techTask;
 
+[TestFixture]
 public class PerentDataPageObject(ChromeDriver driver) : BasePage(driver)
 {
     public By nextButton = By.CssSelector("div.inlineBlock.nextAlign  button");
@@ -25,7 +26,8 @@ public class PerentDataPageObject(ChromeDriver driver) : BasePage(driver)
     public By backPageButton = By.CssSelector("[page_no=\"2\"] button[elname=\"back\"]");
     string partialUrlApplicationForm = "miaplazahelp/form/MOHSInitialApplication";
 
-    [AllureStep("Fill out parant form MiaPrep Online High School")]
+    
+    [AllureDescription("Fill out parant form MiaPrep Online High School")]
     public ChildDataPageObject FillInForms(string firstName, string secondName, string number, string email, string dateStudyStart)
     {
         Assert.That(driver.Url, Does.Contain(partialUrlApplicationForm), $"URL has to contain '{partialUrlApplicationForm}'");

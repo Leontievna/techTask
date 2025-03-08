@@ -8,6 +8,7 @@ using SeleniumExtras.WaitHelpers;
 
 namespace techTask;
 
+[TestFixture]
 public class HomePageObject(ChromeDriver driver) : BasePage(driver)
 {
     string mainUrl = "https://miacademy.co/#/";
